@@ -42,4 +42,6 @@ alias wifi='nmtui'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
 alias dot='cd ~/.dotfiles'
+alias conf='cd ~/.config'
