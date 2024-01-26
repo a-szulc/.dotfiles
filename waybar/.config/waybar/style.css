@@ -6,6 +6,10 @@
     min-height: 0;
 }
 
+#workspaces {
+    margin-right: 10px;
+}
+
 window#waybar {
     background: transparent;
     color: white;
