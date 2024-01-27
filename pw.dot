@@ -1,0 +1,30 @@
+digraph pipewire {
+subgraph cluster_node_55 {
+bgcolor=palegreen;
+label="node_id: 55\lname: v4l2_input.pci-0000_00_14.0-usb-0_8_1.0\lmedia_class: Video/Source\l"
+port_49 [shape=box style=filled fillcolor=lightcoral];
+port_49 [label="port_id: 49\lname: capture_1\ldirection: output\l"];
+}
+subgraph cluster_node_44 {
+bgcolor=palegreen;
+label="node_id: 44\lname: libcamera_input.__SB_.PCI0.XHC_.RHUB.HS08-8_1.0-04f2_b5b9\lmedia_class: Video/Source\l"
+port_45 [shape=box style=filled fillcolor=lightcoral];
+port_45 [label="port_id: 45\lname: capture_1\ldirection: output\l"];
+}
+subgraph cluster_node_37 {
+bgcolor=palegreen;
+label="node_id: 37\lname: Midi-Bridge\lmedia_class: Midi/Bridge\l"
+port_39 [shape=box style=filled fillcolor=lightcoral];
+port_39 [label="port_id: 39\lname: Midi Through:(capture_0) Midi Through Port-0\ldirection: output\l"];
+port_38 [shape=box style=filled fillcolor=lightslateblue];
+port_38 [label="port_id: 38\lname: Midi Through:(playback_0) Midi Through Port-0\ldirection: input\l"];
+}
+subgraph cluster_node_29 {
+bgcolor=palegreen;
+label="node_id: 29\lname: Freewheel-Driver\lmedia_class: (null)\l"
+}
+subgraph cluster_node_28 {
+bgcolor=palegreen;
+label="node_id: 28\lname: Dummy-Driver\lmedia_class: (null)\l"
+}
+}
