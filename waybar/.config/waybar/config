@@ -7,9 +7,9 @@
     "margin-right": 10,    
     "spacing": 0,
 
-    "modules-left": ["hyprland/workspaces", "network"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["network", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
+    "modules-right": ["network","wireplumber", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
     
     "hyprland/workspaces": {
         "show-special": false,
@@ -110,7 +110,7 @@
 
     "network": {
         "format": "{ifname}",
-        "format-wifi": "   {signalStrength}%",
+        "format-wifi": "    {signalStrength}%",
         "format-ethernet": "  {ifname}",
         "format-disconnected": "Disconnected",
         "tooltip-format": " {ifname} via {gwaddri}",
@@ -132,6 +132,14 @@
     //     "format-disconnected": "Disconnected ⚠",
     //     "format-alt": "{ifname}: {ipaddr}/{cidr}"
     // },
+
+    "wireplumber": {
+        "format": "{icon}   {volume}%",
+        "format-muted": "",
+        "on-click": "helvum",
+        "max-volume": 100,
+        "format-icons": ["", "", ""]
+    },
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

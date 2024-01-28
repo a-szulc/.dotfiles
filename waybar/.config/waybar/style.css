@@ -3,11 +3,7 @@
     border-radius: 10;
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    min-height: 0;
-}
-
-#workspaces {
-    margin-right: 10px;
+    min-height: 22px;
 }
 
 window#waybar {
@@ -25,28 +21,38 @@ tooltip label {
     color: white;
 }
 
+#workspaces {
+    background: rgba(0, 0, 0, 0.25);
+}
+
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
     color: white;
+    padding: 0 5px;
 }
 
-#workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
+#workspaces button.active {
+    background: rgba(200, 200, 200, 0.50);
 }
 
-#mode, #clock, #battery {
+#workspaces button:hover {
+    background: rgba(200, 200, 200, 0.70);
+}
+
+#tray {
+    background: none;
+    margin-left: 10px;
+}
+
+#clock, #battery, #wireplumber, #temperature, #backlight,#network {
     padding: 0 10px;
-}
-
-#mode {
     background: #64727D;
-    border-bottom: 3px solid white;
+    background: rgba(0, 0, 0, 0.25);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #clock {
-    background-color: #64727D;
+    margin-right: 0px;
 }
 
 #battery {
@@ -75,3 +81,4 @@ tooltip label {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
