@@ -23,5 +23,7 @@ echo ipc = no >> ~/.config/hypr/hyprpaper.conf
 wal -c
 wal -netsq -i $file
 
+waybar &
+
 # ./.config/waybar/reload.sh
 

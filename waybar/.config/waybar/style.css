@@ -1,9 +1,20 @@
+@import '/home/adas/.cache/wal/colors-waybar.css';
+
+@define-color backgroundlight @color8;
+@define-color backgrounddark #FFFFFF;
+@define-color workspacesbackground1 @color8;
+@define-color workspacesbackground2 #FFFFFF;
+@define-color bordercolor @color8;
+@define-color textcolor1 @color8;
+@define-color textcolor2 #FFFFFF;
+@define-color textcolor3 #FFFFFF;
+@define-color iconcolor @color8;
+
 * {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
     border: none;
     border-radius: 10;
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    min-height: 22px;
 }
 
 window#waybar {
@@ -14,7 +25,8 @@ window#waybar {
 tooltip {
     background: rgba(43, 48, 59, 1);
     border: 1px solid rgba(100, 114, 125, 0.5);
-    border-radius: 0;
+    padding:20px;
+    margin:0px;
 }
 
 tooltip label {
@@ -22,20 +34,78 @@ tooltip label {
 }
 
 #workspaces {
-    background: rgba(0, 0, 0, 0.25);
+    /* 
+*   background: rgba(0, 0, 0, 0.35);
+    background: @workspacesbackground1;
+    color: @textcolor1;
+    opacity: 0.8;
+    */
 }
 
 #workspaces button {
+    /*
     color: white;
     padding: 0 5px;
+    background-color: @workspacesbackground2;
+    color: @textcolor1;
+    opacity: 0.4;
+    */
 }
 
 #workspaces button.active {
-    background: rgba(200, 200, 200, 0.50);
+    /*
+    background: rgba(200, 200, 200, 0.60);
+    background: @workspacesbackground2;
+    color: @textcolor1;
+    opacity: 1.0;
+    */
 }
 
 #workspaces button:hover {
+    /*
     background: rgba(200, 200, 200, 0.70);
+    */
+}
+
+#workspaces {
+    background: @workspacesbackground1;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    padding-left: 1px;
+    padding-right: 1px;
+
+    border-radius: 15px;
+    border: 0px;
+
+    font-weight: bold;
+    font-style: normal;
+
+    opacity: 0.8;
+    color: @textcolor1;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @textcolor1;
+    background-color: @workspacesbackground2;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+    min-width: 30px;
+    transition: all 0.3s ease-in-out;
+    opacity:1.0;
 }
 
 #tray {
@@ -43,12 +113,23 @@ tooltip label {
     margin-left: 10px;
 }
 
-#clock, #battery, #wireplumber, #temperature, #backlight,#network {
+#clock, #wireplumber, #temperature, #backlight,#network {
     padding: 0 10px;
-    background: #64727D;
-    background: rgba(0, 0, 0, 0.25);
+
     margin-left: 5px;
     margin-right: 5px;
+
+    background: #64727D;
+    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 255, 153, 0.50);
+
+    background-color: @backgrounddark;
+    background-color: @backgroundlight50;
+
+    color: @textcolor1;
+    color: @textcolor2;
+
+    border: 2px solid #FFFFFF;
 }
 
 #clock {
@@ -57,7 +138,12 @@ tooltip label {
 
 #battery {
     background-color: #ffffff;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: black;
+    color: white;
+    background: rgba(0, 255, 153, 0.50);
 }
 
 #battery.charging {

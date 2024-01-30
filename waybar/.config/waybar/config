@@ -9,22 +9,13 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["network","wireplumber", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
+    "modules-right": ["network", "wireplumber", "hyprland/workspaces", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
     
     "hyprland/workspaces": {
-        "show-special": false,
+        "show-special": true,
         "on-click": "activate",
         "active-only": false,
         "all-outputs": true,
-        "format": "{}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-        },
-        "persistent-workspaces": {
-            "*": 5
-        } 
     },
     "hyprland/window": {
         "rewrite": {
@@ -117,7 +108,6 @@
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50,
         // "on-click": "~/dotfiles/.settings/networkmanager.sh"
         "on-click": "nm-connection-editor"
         // "format-alt": "{ifname}: {ipaddr}/{cidr}"
