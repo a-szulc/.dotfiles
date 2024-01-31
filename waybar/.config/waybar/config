@@ -7,9 +7,11 @@
     "margin-right": 10,    
     "spacing": 0,
 
+    "min-height": 30,
+
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["network", "wireplumber", "hyprland/workspaces", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
+    "modules-right": ["network", "wireplumber", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
     
     "hyprland/workspaces": {
         "show-special": true,

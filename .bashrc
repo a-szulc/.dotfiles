@@ -34,7 +34,7 @@ alias ll='ls -la'
 alias grep='grep --color=auto'
 
 alias poff='systemctl poweroff'
-alias logout='sleep 1; hyprctl dispatch exit'
+alias logout='sleep 1; hyprctl dispatch exit;sleep 1'
 
 alias v='nvim'
 alias wifi='nmtui'

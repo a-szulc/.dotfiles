@@ -15,6 +15,7 @@
     font-size: 16px;
     border: none;
     border-radius: 10;
+    min-height: 10px;
 }
 
 window#waybar {
@@ -75,10 +76,11 @@ tooltip label {
     margin-bottom: 0px;
     margin-top: 0px;
 
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
-    border-radius: 15px;
     border: 0px;
 
     font-weight: bold;
@@ -86,17 +88,36 @@ tooltip label {
 
     opacity: 0.8;
     color: @textcolor1;
+
+    background-color: @backgrounddark;
+    background-color: @backgroundlight50;
+
+
+    color: @textcolor2;
 }
 
 #workspaces button {
-    padding: 0px 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     margin: 4px 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
     border-radius: 15px;
     border: 0px;
     color: @textcolor1;
     background-color: @workspacesbackground2;
+    background-color: transparent;
+
+    color: @textcolor2;
+
     transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+    opacity: 1.0;
 }
 
 #workspaces button.active {
@@ -106,6 +127,12 @@ tooltip label {
     min-width: 30px;
     transition: all 0.3s ease-in-out;
     opacity:1.0;
+
+    color: @textcolor2;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+        padding-top: 0px;
+        padding-bottom: 0px;
 }
 
 #tray {
@@ -123,11 +150,11 @@ tooltip label {
     background: rgba(0, 0, 0, 0.35);
     background: rgba(0, 255, 153, 0.50);
 
-    background-color: @backgrounddark;
-    background-color: @backgroundlight50;
-
     color: @textcolor1;
     color: @textcolor2;
+
+    background-color: @backgrounddark;
+    background-color: @backgroundlight50;
 
     border: 2px solid #FFFFFF;
 }
@@ -158,7 +185,7 @@ tooltip label {
     }
 }
 
-#battery.warning:not(.charging) {
+#battery.critical:not(.charging) {
     background: #f53c3c;
     color: white;
     animation-name: blink;
