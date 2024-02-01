@@ -154,7 +154,8 @@ tooltip label {
     color: @textcolor2;
 
     background-color: @backgrounddark;
-    background-color: @backgroundlight50;
+    background-color: @backgroundlight0;
+    background-color: transparent;
 
     border: 2px solid #FFFFFF;
 }
@@ -171,22 +172,28 @@ tooltip label {
     color: black;
     color: white;
     background: rgba(0, 255, 153, 0.50);
+
+    border: 2px solid rgba(0, 255, 153, 0.50);
+    background-color: transparent;
 }
 
 #battery.charging {
     color: white;
     background-color: #26A65B;
+    border-color: rgba(0, 255, 153, 0.50);
 }
 
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
+to {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: black;
+}
 }
 
 #battery.critical:not(.charging) {
     background: #f53c3c;
+    border-color: rgba(0, 255, 153, 0.50);
     color: white;
     animation-name: blink;
     animation-duration: 0.5s;
