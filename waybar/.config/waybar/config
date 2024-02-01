@@ -10,7 +10,7 @@
     "min-height": 30,
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
+    "modules-center": ["hyprland/window"],
     "modules-right": ["network", "wireplumber", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
     
     "hyprland/workspaces": {
@@ -22,7 +22,7 @@
     "hyprland/window": {
         "rewrite": {
             "(.*) - Brave": " $1",
-            "(.*) — Mozilla Firefox": " $1",
+            //"(.*) — Mozilla Firefox": " $1",
         },
         "separate-outputs": true
     },
