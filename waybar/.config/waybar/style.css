@@ -10,6 +10,8 @@
 @define-color textcolor3 #FFFFFF;
 @define-color iconcolor @color8;
 
+@define-color wallpaper-color @color8;
+
 * {
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -35,42 +37,6 @@ tooltip label {
 }
 
 #workspaces {
-    /* 
-*   background: rgba(0, 0, 0, 0.35);
-    background: @workspacesbackground1;
-    color: @textcolor1;
-    opacity: 0.8;
-    */
-}
-
-#workspaces button {
-    /*
-    color: white;
-    padding: 0 5px;
-    background-color: @workspacesbackground2;
-    color: @textcolor1;
-    opacity: 0.4;
-    */
-}
-
-#workspaces button.active {
-    /*
-    background: rgba(200, 200, 200, 0.60);
-    background: @workspacesbackground2;
-    color: @textcolor1;
-    opacity: 1.0;
-    */
-}
-
-#workspaces button:hover {
-    /*
-    background: rgba(200, 200, 200, 0.70);
-    */
-}
-
-#workspaces {
-    background: @workspacesbackground1;
-
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -86,14 +52,9 @@ tooltip label {
     font-weight: bold;
     font-style: normal;
 
-    opacity: 0.8;
-    color: @textcolor1;
+    background-color: transparent;
 
-    background-color: @backgrounddark;
-    background-color: @backgroundlight50;
-
-
-    color: @textcolor2;
+    color: white;
 }
 
 #workspaces button {
@@ -102,37 +63,44 @@ tooltip label {
     padding-left: 5px;
     padding-right: 5px;
 
-    margin: 4px 3px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 
-    border-radius: 15px;
     border: 0px;
-    color: @textcolor1;
-    background-color: @workspacesbackground2;
+
     background-color: transparent;
 
-    color: @textcolor2;
+    color: white;
+    opacity: 1.0;
 
     transition: all 0.3s ease-in-out;
-    opacity: 1.0;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: @workspacesbackground2;
-    border-radius: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    border: 2px solid #FFFFFF;
+    border: 2px solid @wallpaper-color;
+
+    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
+
     min-width: 30px;
+
     transition: all 0.3s ease-in-out;
     opacity:1.0;
 
-    color: @textcolor2;
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-        padding-top: 0px;
-        padding-bottom: 0px;
+    color: white;
 }
 
 #tray {
@@ -141,23 +109,23 @@ tooltip label {
 }
 
 #clock, #wireplumber, #temperature, #backlight,#network {
-    padding: 0 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 5px;
     margin-right: 5px;
 
-    background: #64727D;
-    background: rgba(0, 0, 0, 0.35);
-    background: rgba(0, 255, 153, 0.50);
+    color: white;
 
-    color: @textcolor1;
-    color: @textcolor2;
-
-    background-color: @backgrounddark;
-    background-color: @backgroundlight0;
     background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
 
     border: 2px solid #FFFFFF;
+    border: 2px solid @wallpaper-color;
 }
 
 #clock {
@@ -165,11 +133,9 @@ tooltip label {
 }
 
 #battery {
-    background-color: #ffffff;
     padding: 0 10px;
     margin-left: 5px;
     margin-right: 5px;
-    color: black;
     color: white;
     background: rgba(0, 255, 153, 0.50);
 
