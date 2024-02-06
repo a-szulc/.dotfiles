@@ -25,6 +25,11 @@ window#waybar {
     color: white;
 }
 
+window#waybar.empty {
+    background-color: transparent;
+    opacity: 0;
+}
+
 tooltip {
     background: rgba(43, 48, 59, 1);
     border: 1px solid rgba(100, 114, 125, 0.5);
