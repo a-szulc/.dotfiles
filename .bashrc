@@ -46,3 +46,11 @@ alias ....='cd ../../..'
 
 alias dot='cd ~/.dotfiles'
 alias conf='cd ~/.config'
+
+alias cp='cp -vi'
+alias mv='mv -vi'
+
+alias ga='git add'
+alias gc='git commit'
+alias gs='git status'
+alias gsg='git stage'
