@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 source ~/.git-prompt.sh
+source /usr/share/git/completion/git-completion.bash
 
 # red
 # PS1='\[\e[91;1m\]\w\[\e[0m\]\$ '
