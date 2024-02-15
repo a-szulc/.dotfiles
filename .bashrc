@@ -54,3 +54,5 @@ alias ga='git add'
 alias gc='git commit'
 alias gs='git status'
 alias gsg='git stage'
+
+alias update='sudo pacman -Syu'
