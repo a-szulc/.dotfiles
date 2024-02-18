@@ -20,10 +20,10 @@ echo ipc = no >> ~/.config/hypr/hyprpaper.conf
 
 # echo $file > ~/tempp
 
-wal -c
-wal -netsq -i $file
+#wal -c
+#wal -netsq -i $file
   
-waybar &
+#waybar &
 
 # ./.config/waybar/reload.sh
 
