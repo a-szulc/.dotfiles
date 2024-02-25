@@ -6,8 +6,8 @@ vim.keymap.set("n", "<leader>af", ":Explore<CR>")
 vim.keymap.set("n", "U", "<C-R>")
 
 -- buffer controls
--- vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
-vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
+--vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "[b", ":bprevious<CR>")
 vim.keymap.set("n", "]b", ":bnext<CR>")
 
