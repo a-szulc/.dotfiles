@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>af", ":Explore<CR>")
 
 vim.keymap.set("n", "U", "<C-R>")
@@ -10,6 +9,8 @@ vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
 --vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "[b", ":bprevious<CR>")
 vim.keymap.set("n", "]b", ":bnext<CR>")
+
+vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -32,4 +33,3 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 -- This is going to get me cancelled
 vim.keymap.set("i", "jk", "<Esc>")
 
-vim.keymap.set("n", "<leader>w", ":w<CR>")
