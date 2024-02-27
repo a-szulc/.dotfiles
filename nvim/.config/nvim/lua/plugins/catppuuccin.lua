@@ -13,6 +13,12 @@ return {
                     shade = "dark",
                     percentage = 0.25,
                 },
+                custom_highlights = function(colors)
+                    return {
+                        Comment = { fg = "#89AEB1"},
+                        LineNr = { fg = colors.overlay0 },
+                    }
+                end,
             })
             vim.cmd.colorscheme "catppuccin"
         end
