@@ -11,5 +11,6 @@ return {
             autocmd ColorScheme * highlight QuickScopeSecondary guifg='#5fffff' gui=underline cterm=underline
         augroup END
         ]])
+
 	end,
 }
