@@ -110,14 +110,10 @@ tooltip label {
     color: white;
 }
 
-#tray.empty {
-    background: none;
-    margin-left: 0px;
-}
-
 #tray {
     background: none;
     margin-left: 10px;
+    margin-right: 0px;
 }
 
 #clock, #wireplumber, #backlight, #network {
