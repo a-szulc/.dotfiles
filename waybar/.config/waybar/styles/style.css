@@ -96,7 +96,8 @@ tooltip label {
     margin-right: 0px;
 
     border: 2px solid #FFFFFF;
-    border: 2px solid @wallpaper-color;
+    /* border: 2px solid @wallpaper-color; */
+    border: 2px solid rgba(255, 255, 255, 0.7);
 
     background-color: transparent;
     background-color: rgba(0,0,0,0.5);
@@ -109,12 +110,17 @@ tooltip label {
     color: white;
 }
 
+#tray.empty {
+    background: none;
+    margin-left: 0px;
+}
+
 #tray {
     background: none;
     margin-left: 10px;
 }
 
-#clock, #wireplumber, #temperature, #backlight,#network {
+#clock, #wireplumber, #backlight, #network {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -130,8 +136,9 @@ tooltip label {
     background-color: transparent;
     background-color: rgba(0,0,0,0.5);
 
-    border: 2px solid #FFFFFF;
-    border: 2px solid @wallpaper-color;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    /* border: 2px solid #FFFFFF; */
+    /* border: 2px solid @wallpaper-color; */
 }
 
 #clock {
