@@ -172,7 +172,7 @@ to {
     border-color: rgba(0, 255, 153, 0.50);
     color: white;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 3.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
