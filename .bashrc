@@ -8,6 +8,8 @@
 source ~/.git-prompt.sh
 source /usr/share/git/completion/git-completion.bash
 
+export PATH=$PATH:/home/adas/idea-IU-233.14475.28/bin
+
 # red
 # PS1='\[\e[91;1m\]\w\[\e[0m\]\$ '
 
@@ -28,9 +30,13 @@ source /usr/share/git/completion/git-completion.bash
 
 PS1='\[\e[36m\]\w \[\e[95m\]$(__git_ps1 "(%s)")\[\e[00m\]$ '
 
-alias ls='ls --color=auto'
-alias la='ls -l'
-alias ll='ls -la'
+# alias ls='ls --color=auto'
+# alias la='ls -l'
+# alias ll='ls -la'
+
+alias ls='eza --color=always'
+alias la='eza -a'
+alias ll='eza -al'
 
 alias grep='grep --color=auto'
 
@@ -57,3 +63,7 @@ alias gsg='git stage'
 alias gp='git push'
 
 alias update='sudo pacman -Syu'
+
+alias cat='bat'
+
+export QSYS_ROOTDIR="/home/adas/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
