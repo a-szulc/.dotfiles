@@ -6,5 +6,6 @@ then
     sleep 0.1
 else
     style_name=$(cat ~/.cache/waybar_current_theme)
-    waybar -s ~/.dotfiles/waybar/.config/waybar/styles/$style_name &
+    config_name=$(cat ~/.cache/waybar_current_config)
+    waybar -c ~/.dotfiles/waybar/.config/waybar/configs/$config_name -s ~/.dotfiles/waybar/.config/waybar/styles/$style_name &
 fi

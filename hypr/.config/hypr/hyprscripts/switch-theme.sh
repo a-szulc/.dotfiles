@@ -33,5 +33,6 @@ echo $next_theme > ~/.cache/hyprland_current_theme
 echo ${next_theme}
 #cat ~/.dotfiles/hypr/.config/hypr/themes/${next_theme}
 cat ~/.dotfiles/hypr/.config/hypr/themes/${next_theme} > ~/.dotfiles/hypr/.config/hypr/current_theme.conf
+sleep 5
 hyprctl reload
 

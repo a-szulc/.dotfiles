@@ -1,3 +1,4 @@
+@import '/home/adas/.cache/wal/colors-waybar.css';
 
 @define-color backgroundlight @color8;
 @define-color backgrounddark #FFFFFF;
