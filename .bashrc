@@ -5,10 +5,18 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source ~/.git-prompt.sh
-source /usr/share/git/completion/git-completion.bash
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
 
-export PATH=$PATH:/home/adas/idea-IU-233.14475.28/bin
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+source ~/.git-prompt.sh
 
 # red
 # PS1='\[\e[91;1m\]\w\[\e[0m\]\$ '
@@ -41,10 +49,8 @@ alias ll='eza -al'
 alias grep='grep --color=auto'
 
 alias poff='systemctl poweroff'
-alias logout='sleep 1; hyprctl dispatch exit;sleep 1'
 
 alias v='nvim'
-alias wifi='nmtui'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -62,8 +68,6 @@ alias gs='git status'
 alias gsg='git stage'
 alias gp='git push'
 
-alias update='sudo pacman -Syu'
+alias update='sudo dnf update'
 
 alias cat='bat'
-
-export QSYS_ROOTDIR="/home/adas/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
