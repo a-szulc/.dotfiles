@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 source ~/.git-prompt.sh
-source /usr/share/git/completion/git-completion.bash
+#source /usr/share/git/completion/git-completion.bash
 
 export PATH=$PATH:/home/adas/idea-IU-233.14475.28/bin
 
