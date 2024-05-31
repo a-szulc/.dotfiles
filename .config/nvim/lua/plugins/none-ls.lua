@@ -7,9 +7,9 @@ return {
 				-- lua
 				null_ls.builtins.formatting.stylua,
 				-- js
-				null_ls.builtins.formatting.prettierd,
+				-- null_ls.builtins.formatting.prettierd,
 				-- css
-				null_ls.builtins.diagnostics.stylelint,
+				-- null_ls.builtins.diagnostics.stylelint,
 			},
 		})
 

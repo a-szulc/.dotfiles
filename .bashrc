@@ -62,7 +62,8 @@ alias gs='git status'
 alias gsg='git stage'
 alias gp='git push'
 
-alias update='sudo pacman -Syu'
+#alias update='sudo pacman -Syu'
+alias update='sudo dnf update'
 
 alias cat='bat'
 
