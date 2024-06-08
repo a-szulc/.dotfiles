@@ -50,7 +50,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # parse_git_branch() {
 #      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 # }
-# 
+#
 # export PS1='\[\e[36;1m\]\w \[\e[0;95m\]\$(parse_git_branch)\[\e[00m\]$ '
 
 #PS1='\[\e[36m\]\w \[\e[95m\]$(__git_ps1 "(%s)")\[\e[00m\]$ '
@@ -99,4 +99,3 @@ export QSYS_ROOTDIR="/home/adas/.cache/yay/quartus-free/pkg/quartus-free-quartus
 eval "$(thefuck --alias)"
 
 eval "$(starship init bash)"
-

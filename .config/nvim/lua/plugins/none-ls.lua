@@ -6,10 +6,13 @@ return {
 			sources = {
 				-- lua
 				null_ls.builtins.formatting.stylua,
-				-- js
-				-- null_ls.builtins.formatting.prettierd,
+				--null_ls.builtins.completion.luasnip,
+
+				-- bash
+				null_ls.builtins.formatting.shfmt,
+
 				-- css
-				-- null_ls.builtins.diagnostics.stylelint,
+				--null_ls.builtins.diagnostics.stylelint,
 			},
 		})
 
