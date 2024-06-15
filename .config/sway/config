@@ -188,7 +188,7 @@ mode "resize" {
     bindsym $down resize shrink height 10px
 
     # Ditto, with arrow keys
-    bindsym Left resize grow grow 10px
+    bindsym Left resize grow width 10px
     bindsym Right resize shrink width 10px
     bindsym Up resize grow height 10px
     bindsym Down resize shrink height 10px
@@ -225,6 +225,21 @@ focus_wrapping no
 workspace_auto_back_and_forth yes
 
 exec_always autotiling
+
+#seat seat0 xcursor_theme Adwaita 24
+#seat seat0 xcursor_theme capitaine-cursors 32
+seat seat0 xcursor_theme Bibata-Modern-Classic 22
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set $gnome-schema icon-theme 'pop-icon-theme'
+    # gsettings set $gnome-schema cursor-theme 'capitaine-cursors'
+    # gsettings set $gnome-schema cursor-size '32'
+    gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
+    gsettings set $gnome-schema cursor-size '22'
+    #gsettings set $gnome-schema font-name 'Your font name'
+}
 
 # target                 title     bg    text   indicator  border
 client.focused           $mauve    $base $text  $mauve     $mauve

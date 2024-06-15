@@ -9,11 +9,11 @@
 
     "min-height": 30,
 
-    "modules-left": ["workspaces"],
+    "modules-left": ["sway/workspaces"],
     "modules-center": ["window"],
     "modules-right": ["network", "wireplumber", "backlight", "battery", "clock", "tray"],
     
-    "workspaces": {
+    "sway/workspaces": {
         "on-click": "activate",
         "active-only": false,
         "all-outputs": true,
