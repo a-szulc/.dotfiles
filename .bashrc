@@ -95,6 +95,7 @@ alias cat='bat'
 alias hist='history | grep -i'
 
 export QSYS_ROOTDIR="/home/adas/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
+export GOPATH=$HOME/go
 
 eval "$(thefuck --alias)"
 
