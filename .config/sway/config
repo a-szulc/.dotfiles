@@ -161,7 +161,7 @@ input "1241:41483:E-Signal_USB_Gaming_Mouse" {
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    #bindsym $mod+space focus mode_toggle
+    bindsym $mod+Mod1+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -229,7 +229,7 @@ exec_always autotiling
 
 #seat seat0 xcursor_theme Adwaita 24
 #seat seat0 xcursor_theme capitaine-cursors 32
-seat seat0 xcursor_theme Bibata-Modern-Classic 22
+seat seat0 xcursor_theme Bibata-Modern-Classic 20
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
@@ -238,7 +238,7 @@ exec_always {
     # gsettings set $gnome-schema cursor-theme 'capitaine-cursors'
     # gsettings set $gnome-schema cursor-size '32'
     gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
-    gsettings set $gnome-schema cursor-size '22'
+    gsettings set $gnome-schema cursor-size '20'
     #gsettings set $gnome-schema font-name 'Your font name'
 }
 
