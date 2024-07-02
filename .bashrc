@@ -94,6 +94,8 @@ alias cat='bat'
 
 alias hist='history | grep -i'
 
+alias sb='source /home/adas/.bashrc;echo sourced bashrc'
+
 export QSYS_ROOTDIR="/home/adas/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
 export EDITOR=/usr/bin/nvim
 export GOPATH=$HOME/go
