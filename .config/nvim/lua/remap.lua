@@ -23,6 +23,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<C-/>", ":nohl<CR>")
 
+vim.keymap.set("n", "<leader>tr", ":Ex<CR>")
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
