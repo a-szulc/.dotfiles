@@ -1,6 +1,6 @@
 #"$schema" = 'https://starship.rs/config-schema.json'
 
-format = '$all$fill$time$line_break$os$character'
+format = '$all$fill$time$line_break$battery$os$character'
 #format = '$directory$character'
 #right_format = '$time'
 
@@ -19,6 +19,19 @@ truncation_length = 5
 # Catppuccin 'lavender'
 style = "bold lavender"
 read_only = " 󰌾"
+
+[battery]
+format = '[$symbol$percentage]($style) '
+full_symbol = '󰁹'
+charging_symbol = '󰂄'
+discharging_symbol = '󰂃'
+disabled = false
+
+[[battery.display]] # 'bold red' style and discharging_symbol when capacity is between 0% and 10%
+threshold = 15
+style = 'bold red'
+
+# when capacity is over 15%, the battery indicator will not be displayed
 
 [time]
 format = '🕙[ $time ]($style) '
