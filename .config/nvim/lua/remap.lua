@@ -22,6 +22,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<C-/>", ":nohl<CR>")
+vim.keymap.set("n", "<M-/>", ":nohl<CR>")
 
 vim.keymap.set("n", "<leader>tr", ":Ex<CR>")
 
