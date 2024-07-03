@@ -1,6 +1,6 @@
 #!/bin/bash
 
-selected=$(find ~/.local/tmux-sessions -mindepth 1 -maxdepth 1 | fzf)
+selected=$(find ~/.dotfiles/.local/tmux-sessions -mindepth 1 -maxdepth 1 | fzf)
 
 if [[ -z $selected ]]; then
     exit 0
