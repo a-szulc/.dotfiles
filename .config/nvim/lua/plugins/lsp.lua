@@ -21,10 +21,16 @@ return {
 			local lspconfig = require("lspconfig")
 
 			require("mason-lspconfig").setup_handlers({
-				function(server)
-					lspconfig[server].setup({ capabilities = capabilities })
-				end,
-			})
+                function(server)
+                    lspconfig[server].setup({ capabilities = capabilities })
+                end,
+                lspconfig.ltex.setup({
+                    capabilities = capabilities,
+                    settings = {
+                        filetypes = "markdown",
+                    }
+                })
+            })
 
 			-- lspconfig.html.setup({
 			-- 	capabilities = capabilities,
