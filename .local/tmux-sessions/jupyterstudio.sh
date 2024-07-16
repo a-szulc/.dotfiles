@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SESSIONNAME="mljar"
+SESSIONNAME="jupyter-studio"
 tmux has-session -t $SESSIONNAME &> /dev/null
 
 if [ $? != 0 ]
