@@ -16,7 +16,8 @@ set $right l
 
 # Your preferred terminal emulator
 #set $term foot
-set $term alacritty
+#set $term alacritty
+set $term kitty
 
 #font
 font jetbrains-mono-fonts.noarch: 10

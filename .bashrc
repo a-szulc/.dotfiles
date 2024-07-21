@@ -71,6 +71,8 @@ alias logout='sleep 1; hyprctl dispatch exit;sleep 1'
 alias v='nvim'
 alias wifi='nmtui'
 
+alias rmd="rm -r"
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -103,6 +105,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 #export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="$(go env GOPATH)/bin/:$PATH"
+export PATH="/home/adas/.local/scripts/:$PATH"
+# /home/adas/.local/scripts
 
 env=~/.ssh/agent.env
 
