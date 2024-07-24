@@ -10,6 +10,10 @@ vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
 vim.keymap.set("n", "[b", ":bprevious<CR>")
 vim.keymap.set("n", "]b", ":bnext<CR>")
 
+vim.keymap.set("n", "]c", ":cnext<CR>")
+vim.keymap.set("n", "[c", ":cprev<CR>")
+vim.keymap.set("n", "<leader>co", ":copen<CR>")
+
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

@@ -58,10 +58,12 @@ return {
 			-- })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>grf", vim.lsp.buf.references, {})
-			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
 			vim.keymap.set("n", "<leader>gsi", vim.lsp.buf.signature_help, {})
+
+            vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, {})
 

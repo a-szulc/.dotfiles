@@ -28,10 +28,10 @@ return {
             vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 
             -- find string
-            vim.keymap.set({ "n", "v" }, "<leader>fs", builtin.live_grep, {})
+            vim.keymap.set("n", "<leader>fs", builtin.live_grep, {})
 
             -- find under cursor
-            vim.keymap.set({ "n", "v" }, "<leader>fu", builtin.grep_string, {})
+            vim.keymap.set("n", "<leader>fu", builtin.grep_string, {})
 
             require("telescope").load_extension("ui-select")
             require("telescope").load_extension("fzf")
