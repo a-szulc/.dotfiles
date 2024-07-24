@@ -20,6 +20,8 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "<C-e>", "3<C-e>")
+vim.keymap.set("n", "<C-y>", "3<C-y>")
 
 vim.keymap.set("n", "<C-/>", ":nohl<CR>")
 vim.keymap.set("n", "<M-/>", ":nohl<CR>")
