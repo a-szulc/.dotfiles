@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SESSIONNAME="dotfiles"
+SESSIONNAME="config"
 tmux has-session -t $SESSIONNAME &> /dev/null
 
 if [ $? != 0 ]
