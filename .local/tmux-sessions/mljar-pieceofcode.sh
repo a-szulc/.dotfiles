@@ -1,13 +1,11 @@
 #!/bin/bash
 
-SESSIONNAME="mljar"
+SESSIONNAME="piece-of-code"
 tmux has-session -t $SESSIONNAME &> /dev/null
 
 if [ $? != 0 ]
  then
-    tmux new-session -s $SESSIONNAME -c ~/mljar/report -d -n report
-    tmux send-keys "v ." Enter
-    tmux new-window -c ~/mljar/extensions/piece-of-code/recipes -n yarn
+    tmux new-session -s $SESSIONNAME -c ~/mljar/extensions/piece-of-code/recipes -d -n yarn
     tmux send-keys "yarn storybook" Enter
     tmux new-window -c ~/mljar/extensions/piece-of-code/recipes -n nvim
     tmux send-keys "v ." Enter
