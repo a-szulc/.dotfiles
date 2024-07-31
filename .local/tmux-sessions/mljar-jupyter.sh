@@ -5,6 +5,7 @@ tmux has-session -t $SESSIONNAME &> /dev/null
 
 if [ $? != 0 ]
 then
+
     tmux new-session -s $SESSIONNAME -c ~/mljar/extensions/piece-of-code/recipes -d -n jupyter
     tmux send-keys "yarn build" Enter
     tmux splitw -c ~/mljar/extensions/piece-of-code/extension -h
