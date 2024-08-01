@@ -13,6 +13,7 @@ vim.keymap.set("n", "]b", ":bnext<CR>")
 vim.keymap.set("n", "]c", ":cnext<CR>")
 vim.keymap.set("n", "[c", ":cprev<CR>")
 vim.keymap.set("n", "<leader>co", ":copen<CR>")
+vim.keymap.set("n", "<leader>cl", ":cclose<CR>")
 
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 
