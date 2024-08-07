@@ -130,6 +130,6 @@ fi
 
 unset env
 
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 
 eval "$(starship init bash)"
