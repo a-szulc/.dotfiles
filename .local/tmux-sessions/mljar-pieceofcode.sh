@@ -28,8 +28,13 @@ if [ $? != 0 ]
     # tmux select-layout "main-vertical"
     # tmux select-layout 52c4,160x39,0,0{80x39,0,0,27,79x39,81,0[79x19,81,0,28,79x19,81,20,29]}
     
-    tmux new-window -c ~/src/python-db-queries -n db-script
+    tmux new-window -c ~/src/python-db-queries -n script
+    tmux send-keys "source venv/bin/activate" Enter
     tmux send-keys "v ." Enter
+
+    tmux new-window -c ~/src/python-db-queries -n run
+    tmux send-keys "source venv/bin/activate" Enter
+    tmux send-keys "python "
 
     # tmux previous-window
     # tmux select-pane -t 3.left
