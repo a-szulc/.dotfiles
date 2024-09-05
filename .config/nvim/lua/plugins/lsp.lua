@@ -22,6 +22,9 @@ return {
 
 			require("mason-lspconfig").setup_handlers({
 				function(server)
+                    if server == "tsserver" then
+                        server = "ts_ls"
+                    end
 					lspconfig[server].setup({ capabilities = capabilities })
 				end,
 				lspconfig.ltex.setup({
