@@ -7,6 +7,7 @@ return {
         config = function()
             require("catppuccin").setup({
                 flavour = "macchiato",
+                -- flavour = "mocha",
                 show_end_of_buffer = true,
                 dim_inactive = {
                     enabled = true,
