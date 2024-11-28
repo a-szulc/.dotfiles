@@ -27,12 +27,12 @@ return {
                     end
 					lspconfig[server].setup({ capabilities = capabilities })
 				end,
-				lspconfig.ltex.setup({
-					capabilities = capabilities,
-					settings = {
-						filetypes = "markdown",
-					},
-				}),
+				-- lspconfig.ltex.setup({
+				-- 	capabilities = capabilities,
+				-- 	settings = {
+				-- 		filetypes = "markdown",
+				-- 	},
+				-- }),
 			})
 
 			-- lspconfig.html.setup({
