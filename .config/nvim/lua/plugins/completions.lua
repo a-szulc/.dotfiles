@@ -67,7 +67,7 @@ return {
                     end, { "i", "s" }),
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
-                            cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
+                            cmp.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
                         elseif luasnip.locally_jumpable(-1) then
                             luasnip.jump(-1)
                         else
