@@ -13,4 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("options")
 require("remap")
-require("lazy").setup("plugins")
+require("lazy").setup({
+  { import = "plugins" },
+  { import = "plugins.colorschemes" },
+})
+
+vim.cmd.colorscheme "catppuccin"
+-- vim.cmd.colorscheme "vague"
