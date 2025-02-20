@@ -7,13 +7,17 @@
   caps esc ;; ; a s d f j k l ;
 )
 (defvar
+  zero-time 1
   tap-time 150
   hold-time 200
+  long-time 65000
 )
 
 (defalias
-  esccaps (tap-hold $tap-time $hold-time esc esc)
-  capsesc (tap-hold $tap-time $hold-time caps caps)
+  esccaps (one-shot-press $zero-time esc)
+  capsesc (one-shot-press $zero-time caps)
+  ;; esccaps (tap-hold $tap-time $hold-time esc esc)
+  ;; capsesc (tap-hold $tap-time $hold-time caps caps)
   ;; a (tap-hold $tap-time $hold-time a lmet)
   ;; s (tap-hold $tap-time $hold-time s lalt)
   ;; d (tap-hold $tap-time $hold-time d lsft)
