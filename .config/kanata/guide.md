@@ -1,4 +1,4 @@
-Add this to: ~/.config/systemd/user/kanata.service:
+Add this to: `~/.config/systemd/user/kanata.service`:
 
 ```
 [Unit]
@@ -16,7 +16,21 @@ Restart=no
 WantedBy=default.target
 ```
 
-Then run
+Create uinput user group:
+`sudo groupadd uinput`
+
+Add user to the input and the uinput group
+```
+sudo usermod -aG input $USER
+sudo usermod -aG uinput $USER
+```
+
+Add this to: `/etc/udev/rules.d/99-input.rules`:
+```
+KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+```
+
+Then run, or `add_system_service.sh`:
 
 ```
 systemctl --user daemon-reload
