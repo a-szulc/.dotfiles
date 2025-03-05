@@ -20,8 +20,7 @@ gtk-titlebar-hide-when-maximized = true
 # gtk-adwaita = false
 # adw-toolbar-style = flat
 
-# font-family = "JetBrainsMono Nerd Font"
-font-family = "JetBrainsMono NF SemiBold"
-# font-family = "JetBrainsMono NF Bold"
-# font-family = "JetBrainsMono NF ExtraBold"
-# font-family = "JetBrainsMono NF Medium"
+font-family = "JetBrainsMono"
+font-style = "SemiBold"
+# font-style = "ExtraBold"
+# font-style = "Medium"
