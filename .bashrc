@@ -69,6 +69,7 @@ alias poff='systemctl poweroff'
 alias logout='sleep 1; hyprctl dispatch exit;sleep 1'
 
 alias v='nvim'
+alias vim='nvim'
 alias wifi='nmtui'
 
 alias rmd="rm -r"

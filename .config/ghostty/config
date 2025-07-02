@@ -1,11 +1,27 @@
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right
+
+#keybind = ctrl+d=close_surface
+
+keybind = ctrl+t=toggle_window_decorations
+
 #theme = catppuccin-mocha
+#theme = Kanagawa Wave
 theme = Peppermint
 #cursor-invert-fg-bg = true
 cursor-style = block
 shell-integration-features = no-cursor
 #cursor-color = "bbbbbb"
+
 #cursor-color = "ffffff"
-cursor-text = "000000"
+#cursor-text = "000000"
+
+#kanagawa cursor colors
+cursor-color = "c8c093"
+cursor-text = "1d202f"
+
 #cursor-opacity = 0.7
 # background-opacity = 0.8
 mouse-hide-while-typing = true
@@ -23,7 +39,7 @@ window-decoration = none
 # gtk-titlebar = false
 # gtk-tabs-location = top
 # gtk-wide-tabs = false
-gtk-titlebar-hide-when-maximized = true
+#gtk-titlebar-hide-when-maximized = true
 # gtk-adwaita = false
 # adw-toolbar-style = flat
 
