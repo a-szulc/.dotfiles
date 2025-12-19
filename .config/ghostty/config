@@ -14,7 +14,8 @@ keybind = ctrl+enter=unbind
 #theme = Kanagawabones
 #theme = Kanagawa Dragon
 #theme = Konsolas
-theme = Peppermint
+#theme = Peppermint
+theme = Kitty Default
 #cursor-invert-fg-bg = true
 cursor-style = block
 shell-integration-features = no-cursor
