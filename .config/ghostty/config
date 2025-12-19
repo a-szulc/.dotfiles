@@ -2,10 +2,12 @@ keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+j=goto_split:down
 keybind = ctrl+alt+k=goto_split:up
 keybind = ctrl+alt+l=goto_split:right
-
+keybind = ctrl+tab=unbind
 #keybind = ctrl+d=close_surface
 
 keybind = ctrl+t=toggle_window_decorations
+
+keybind = ctrl+enter=unbind
 
 #theme = catppuccin-mocha
 #theme = Kanagawa Wave

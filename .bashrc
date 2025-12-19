@@ -55,9 +55,9 @@ if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
 #PS1='\[\e[36m\]\w \[\e[95m\]$(__git_ps1 "(%s)")\[\e[00m\]$ '
 
-# alias ls='ls --color=auto'
-# alias la='ls -l'
-# alias ll='ls -la'
+#alias ls='ls --color=auto'
+#alias la='ls -l'
+#alias ll='ls -la'
 
 alias ls='eza --color=always'
 alias la='eza -a'
@@ -99,14 +99,16 @@ alias hist='history | grep -i'
 
 alias sb='source /home/adas/.bashrc;echo sourced bashrc'
 
-export EDITOR=/usr/bin/nvim
+export EDITOR=/opt/nvim-linux-x86_64/bin/nvim
 export GOPATH=$HOME/go
 
 # export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
-#export PATH=$PATH:$(go env GOPATH)/bin
+# export PATH=$PATH:$(go env GOPATH)/bin
 # export PATH="$(go env GOPATH)/bin/:$PATH"
 export PATH="/home/adas/.local/scripts/:$PATH"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 
 env=~/.ssh/agent.env
 
