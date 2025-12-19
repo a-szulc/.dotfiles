@@ -11,6 +11,9 @@ keybind = ctrl+enter=unbind
 
 #theme = catppuccin-mocha
 #theme = Kanagawa Wave
+#theme = Kanagawabones
+#theme = Kanagawa Dragon
+#theme = Konsolas
 theme = Peppermint
 #cursor-invert-fg-bg = true
 cursor-style = block
