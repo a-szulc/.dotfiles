@@ -3,13 +3,6 @@
 #
 # type this at the command prompt: sudo cp nuphy.rules /etc/udev/rules.d
 
-
-# Nuphy Devices
-# This file should be installed to /etc/udev/rules.d so that you can access Nuphy Devices with via without being root.
-#
-# type this at the command prompt: sudo cp nuphy.rules /etc/udev/rules.d
-
-
 # Nuphy Air96 v2   -> 3265   
 # Nuphy Air75 v2   -> 3245
 # Nuphy Air60 v2   -> 3255
@@ -57,7 +50,3 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="1028", MODE="0666
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="6120", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="fe70", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="6130", MODE="0666"
-
-# This file should be installed to /etc/udev/rules.d so that you can access Nuphy Devices with via without being root.
-#
-# type this at the command prompt: sudo cp nuphy.rules /etc/udev/rules.d
