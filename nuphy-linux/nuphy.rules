@@ -15,9 +15,10 @@
 # NuPhy Dongle     -> 2620
 # Nuphy Halo65 HE  -> 6112
 # NuPhy Air75 v3   -> 1028
-# Nuphy Air75 HE   -> 6120
-# NuPhy Field75 HE -> fe70
-# NuPhyX BH65      -> 6130
+# NuPhy Air75 v3 Upgrader   -> 0722
+# Nuphy Air75 HE            -> 6120
+# NuPhy Field75 HE          -> fe70
+# NuPhyX BH65               -> 6130
 
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="3265", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="3245", MODE="0666"
@@ -31,6 +32,7 @@ SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idPro
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="2620", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="6112", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="1028", MODE="0666"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="0722", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="6120", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="fe70", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="6130", MODE="0666"
@@ -47,6 +49,7 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="1026", MODE="0666
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="2620", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="6112", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="1028", MODE="0666"
+KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="0722", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="6120", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="fe70", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="6130", MODE="0666"
