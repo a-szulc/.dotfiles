@@ -1,0 +1,12 @@
+# This file should be installed to /etc/udev/rules.d so that you can access Nuphy Devices with via without being root.
+#
+# type this at the command prompt: sudo cp mchose.rules /etc/udev/rules.d
+# sudo udevadm control --reload-rules && sudo udevadm trigger
+
+# mchose vendor id: 5253
+# L7 pro id: 1020 
+
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="5253", ATTR{idProduct}=="1020", MODE="0666"
+
+KERNEL=="hidraw*", ATTRS{idVendor}=="5253", ATTRS{idProduct}=="1020", MODE="0666"
+
