@@ -5,8 +5,11 @@
 
 # mchose vendor id: 5253
 # L7 pro id: 1020 
+# L7 pro id when wired: 00b0
 
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="5253", ATTR{idProduct}=="1020", MODE="0666"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="5253", ATTR{idProduct}=="00b0", MODE="0666"
 
 KERNEL=="hidraw*", ATTRS{idVendor}=="5253", ATTRS{idProduct}=="1020", MODE="0666"
+KERNEL=="hidraw*", ATTRS{idVendor}=="5253", ATTRS{idProduct}=="00b0", MODE="0666"
 
