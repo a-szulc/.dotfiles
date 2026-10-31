@@ -1,6 +1,43 @@
 # ~/.bashrc
 iatest=$(expr index "$-" i)
 
+unset PATH
+export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/go/bin
+
+
+#################################
+##### part from .bashrc.bak #####
+#################################
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
+
+###############
+##### end #####
+###############
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -68,7 +105,7 @@ alias grep='grep --color=auto'
 alias poff='systemctl poweroff'
 alias logout='sleep 1; hyprctl dispatch exit;sleep 1'
 
-alias v='nvim'
+# alias v='nvim'
 alias vim='nvim'
 alias wifi='nmtui'
 
@@ -106,8 +143,10 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:$(go env GOPATH)/bin
 # export PATH="$(go env GOPATH)/bin/:$PATH"
-export PATH="/home/adas/.local/scripts/:$PATH"
+export PATH="$PATH:/home/adas/.local/scripts/"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+# export PATH="$PATH:/opt/nvim-linux-x86_64/bin/nvim"
+export PATH="$PATH:/home/adas/.cargo/bin"
 
 
 env=~/.ssh/agent.env
